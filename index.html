@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>ecommerce</title>
+
+    <!-- <style>
+        .mainli:hover .subli {
+          display: block;
+        }
+      </style> -->
+  </head>
+
+  <body class="">
+    <nav class="bg-white flex justify-between items-center px-5">
+      <!-- logo container -->
+      <div>
+        <img class="animate-bounce w-24" src="images/logoo.png" />
+      </div>
+
+      <!-- list- container -->
+
+      <div>
+        <ul class="flex gap-8 cursor-pointer">
+          <li class="hover:text-slate-400">Home</li>
+          <li class="hover:text-slate-400">About Us</li>
+          <li class="hover:text-slate-400">Contact Us</li>
+          <li class="hover:text-slate-400">Wishlist</li>
+        </ul>
+      </div>
+
+      <!-- search container -->
+      <div class="flex gap-2 bg-white rounded-md px-2 py-1">
+        <img
+          class="w-7 cursor-pointer border-r pr-1"
+          src="images/icons8-search-50.png"
+        />
+        <input
+          class="focus:outline-none w-full pl-2"
+          placeholder="Search"
+          type="text"
+        />
+      </div>
+    </nav>
+    <!-- parent -->
+    <div class="rounded-3xl flex w-full h-[600px] bg-slate-200">
+      <!-- child1 -->
+      <div class="w-[280px]">
+        <ul>
+          <li class="p-3 mainli group hover:cursor-pointer">
+            <p>Lehenga</p>
+            <ul class="group-hover:block hidden subli bg-gray-100">
+              <li class="p-3 hover:bg-slate-300 rounded-md">
+                <p>Blouse</p>
+              </li>
+              <li class="p-3 hover:bg-slate-300 rounded-md">
+                <p>Skirt</p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="p-3 group hover:cursor-pointer">
+            <p>Accessories</p>
+
+            <ul class="hidden group-hover:block subli bg-gray-100">
+              <li class="p-3 hover:bg-slate-300 rounded-md">
+                <p>necklace</p>
+              </li>
+              <li class="p-3 hover:bg-slate-300 rounded-md">
+                <p>Earrings</p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="p-3 group hover:cursor-pointer">
+            <p>Baby wears</p>
+
+            <ul class="hidden group-hover:block bg-gray-100">
+              <li class="p-3 hover:bg-slate-300 rounded-md">
+                <p>Rompers</p>
+              </li>
+              <li class="p-3 hover:bg-slate-300 rounded-md">
+                <p>Bodysuits</p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="p-3 group hover:cursor-pointer">
+            <p>Scrunchies</p>
+
+            <ul class="hidden group-hover:block bg-gray-100">
+              <li class="p-3 hover:bg-slate-300 rounded-md">
+                <p>Silk</p>
+              </li>
+              <li class="p-3 hover:bg-slate-300 rounded-md">
+                <p>Crochets</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- <section class="">
+        <div class="size-96 translate-x-44 flex justify-center items-center">
+          <h1 class="text-xl font-serif">Outfits to shine</h1>
+        </div>
+      </section> -->
+
+      <section class="w-[800px] flex">
+        <div class="size-96 translate-x-44 flex justify-center items-center">
+          <h1 class="text-xl font-serif">Outfits to shine</h1>
+      </section>
+
+      <!-- slider -->
+        <div class=" w-[800px] rounded-lg ">
+
+          <div id="slides">
+            <img id="image" class="object-cover ml-44 h-[550px]" src="images/default.png" alt="default image">
+
+          </div>
+
+          <div class="flex justify-center">
+
+            <div id="prev-btn" class="hover:cursor-pointer  px-3 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+            
+  
+            </div>
+            <div id="next-btn" class="hover:cursor-pointer  px-3 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+            
+            
+          </div>
+          
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const data=[
+      {
+        id:0,
+        image:"https://i.pinimg.com/564x/1e/c9/44/1ec944ef242d84ed437f68c2b5201fd5.jpg"
+
+      },
+      {
+        id:1,
+        image:"https://i.pinimg.com/564x/4d/98/6b/4d986babb07045676ff07f2a8ba593a4.jpg"
+
+      },
+      {
+        id:2,
+        image:"https://i.pinimg.com/564x/3f/cc/72/3fcc727b1db69ac878443ec46d034e49.jpg"
+
+      },
+      {
+        id:3,
+        image:"https://i.pinimg.com/564x/38/2d/95/382d957020ff35710221daa6f5aef922.jpg"
+        
+      },
+      {
+        id:4,
+        image:"https://i.pinimg.com/564x/3f/cc/72/3fcc727b1db69ac878443ec46d034e49.jpg"
+        
+      },
+        
+      ]
+
+      const image=document.querySelector('#image')
+      const prevbtn=document.querySelector('#prev-btn')
+      const nextbtn=document.querySelector('#next-btn')
+
+      let counter=-1;
+      setInterval(()=>{
+        if(counter<data.length-1)
+        {
+          counter++;
+          image.src=data[counter].image
+        }
+
+        else{
+          counter=0;
+        }
+
+      },1000)
+
+      nextbtn.addEventListener('click',()=>{
+        if(counter<data.length-1){
+          counter++
+          
+        }
+        else{
+          counter=0
+        }
+
+      image.src=data[counter].image
+
+      })
+
+      prevbtn.addEventListener('click',()=>{
+        if(counter===0){
+          counter=data.length-1
+        }
+        else{
+          counter--
+        }
+
+        console.log(counter);
+        image.src=data[counter].image
+
+      })
+     
+
+
+    </script>
+
+    <!--  featured commnet section -->
+    <section>
+      <h1 class="text-center">Our Products</h1>
+    </section>
+
+    <section class="flex justify-center gap-x-14 pb-10">
+      <div
+        class="bg-slate-200 pb-2 shadow-xl rounded-lg w-[310px] flex flex-col justify-center items-center gap-y-4"
+      >
+        <img
+          class="pl-4 h-40 w-40 object-contain"
+          src="images/pic1.png"
+          alt=""
+        />
+        <div class="">
+          <p class="font-bold">button-up skirt</p>
+          <p>Price : <span class="text-gray-500">Rs 1500 </span></p>
+          
+        </div>
+      </div>
+      <div
+        class="bg-slate-200 pb-2 shadow-xl rounded-lg w-[310px] flex flex-col justify-center items-center gap-y-4"
+      >
+        <img
+          class="pl-4 h-40 w-48 object-contain"
+          src="images/earrings.png"
+          alt=""
+        />
+        <div class="">
+          <p class="font-bold">Earrings</p>
+          <p>Price : <span class="text-gray-500">Rs 200 </span></p>
+          
+        </div>
+      </div>
+      <div
+        class="bg-slate-200 pb-2 shadow-xl rounded-lg w-[310px] flex flex-col justify-center items-center gap-y-4"
+      >
+        <img
+          class="pl-3 h-40 w-40 object-contain"
+          src="images/skirt.png"
+          alt=""
+        />
+        <div class="">
+          <p class="font-bold">Skirt</p>
+          <p>Price : <span class="te">Rs 800 </span></p>
+         
+        </div>
+      </div>
+      <!-- next line products -->
+
+      <div>
+
+        <div
+        class="bg-slate-200 pb-2 shadow-xl rounded-lg w-[310px] flex flex-col justify-center items-center gap-y-4"
+      >
+        <img
+          class="pl-4 h-40 w-40 object-contain"
+          src="images/pic1.png"
+          alt=""
+        />
+        <div class="">
+          <p class="font-bold">button-up skirt</p>
+          <p>Price : <span class="text-gray-500">Rs 1500 </span></p>
+          
+        </div>
+      </div>
+
+      </div>
+    </section>
+  </body>
+</html>
